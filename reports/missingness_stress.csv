@@ -1,0 +1,10 @@
+split,column,masked,rows
+train,Age,2854,14158
+train,word_count,2782,14158
+train,character_count,2840,14158
+validation,Age,562,2762
+validation,word_count,590,2762
+validation,character_count,541,2762
+test,Age,1132,5713
+test,word_count,1181,5713
+test,character_count,1128,5713

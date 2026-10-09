@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "split_rows": {
+    "train": 14158,
+    "validation": 2762,
+    "test": 5713
+  },
+  "positive_label": "non-recommendation",
+  "stress_scenario": "20% MCAR per numeric column; simulated, not source defects",
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "imbalanced-learn": "0.14.2",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3"
+  },
+  "source_hashes": {
+    "models.py": "037f9e4ed37e3ed215d87a686df12715382da67f7d1f3e60d469ca36a29875bd",
+    "evaluation.py": "a1b1e1df0974780c484581c87f5b3d5bb0e3febe2d6321cbd17b609428408ce4",
+    "__init__.py": "9887c8ffedd49ac3bfa8f9ac4da046a04d29a3004cd4ccae53043d1ebb6fd0e7",
+    "visualization.py": "40e9adedfc48004ae683600b69a4d4febf4826fd88a6ba09d77d20b7bb15181a",
+    "cli.py": "b4b34b91af20bf69436cc5f2e71367089b1f366a77bbeaee3d9aa3e684184361",
+    "pipeline.py": "aa9b156387e94a4870e0cf3f381adaf7649eb7727ecc339b5a4f8cd81e8237c2",
+    "data.py": "da64d6346f40241ebe01531f4af76814cd0f8d0c900381c8e8f208f2f64d127d"
+  }
+}

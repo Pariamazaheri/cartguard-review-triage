@@ -1,0 +1,12 @@
+{
+  "source_rows": 23486,
+  "usable_rows": 22633,
+  "empty_reviews": 845,
+  "source_sha256": "bd93cc515747ad1f87b8bc863c9e40da758509e6db6506a96d06976e61e36ee0",
+  "natural_missing_numeric": 0,
+  "natural_missing_categories": {
+    "Division Name": 14,
+    "Department Name": 14,
+    "Class Name": 14
+  }
+}
