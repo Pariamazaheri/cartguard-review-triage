@@ -65,7 +65,7 @@ def render(root):
         "none": (8, 22),
         "weighted": (8, 0),
         "smotenc": (8, -20),
-        "under_equal": (-12, -24),
+        "under_equal": (8, -14),
         "under_half": (-8, 16),
         "over_equal": (8, 4),
         "full_text": (-14, -20),
@@ -76,7 +76,7 @@ def render(root):
             row.strategy,
             (row.recall, row.precision),
             xytext=offsets[row.strategy],
-            ha="right" if row.strategy in {"under_equal", "full_text"} else "left",
+            ha="right" if row.strategy == "full_text" else "left",
             arrowprops={"arrowstyle": "-", "color": "#777777", "lw": 0.7},
             textcoords="offset points",
         )
@@ -85,4 +85,5 @@ def render(root):
         xlabel="Recall",
         ylabel="Precision",
     )
+    ax.margins(x=0.1, y=0.2)
     save("operating_tradeoff")
