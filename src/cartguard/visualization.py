@@ -61,12 +61,23 @@ def render(root):
     ax.legend()
     save("precision_recall")
     fig, ax = plt.subplots(figsize=(8, 5))
+    offsets = {
+        "none": (8, 22),
+        "weighted": (8, 0),
+        "smotenc": (8, -20),
+        "under_equal": (-12, -24),
+        "under_half": (-8, 16),
+        "over_equal": (8, 4),
+        "full_text": (-14, -20),
+    }
     for row in scores[scores.scenario == "natural"].itertuples():
         ax.scatter(row.recall, row.precision, s=90)
         ax.annotate(
             row.strategy,
             (row.recall, row.precision),
-            xytext=(4, 4),
+            xytext=offsets[row.strategy],
+            ha="right" if row.strategy in {"under_equal", "full_text"} else "left",
+            arrowprops={"arrowstyle": "-", "color": "#777777", "lw": 0.7},
             textcoords="offset points",
         )
     ax.set(
